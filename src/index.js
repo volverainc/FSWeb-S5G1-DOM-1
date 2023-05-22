@@ -53,14 +53,14 @@ document.querySelector("footer > a").innerHTML = siteContent["footer"]["copyrigh
 
 /* header nav */
 const headerNav = document.querySelectorAll("nav > a");
-headerNav.forEach((nav) => { nav.classList.add("italic")})
+headerNav.forEach((nav) => { nav.classList.add("italic") })
 
-headerNav[0].innerHTML = "Servisler"
-headerNav[1].innerHTML = "Ürünler"
-headerNav[2].innerHTML = "Vizyon"
-headerNav[3].innerHTML = "Özellikler"
-headerNav[4].innerHTML = "Hakkımızda"
-headerNav[5].innerHTML = "İletişim"
+headerNav[0].innerHTML = siteContent["nav"]["nav-item-1"]
+headerNav[1].innerHTML = siteContent["nav"]["nav-item-2"]
+headerNav[2].innerHTML = siteContent["nav"]["nav-item-3"]
+headerNav[3].innerHTML = siteContent["nav"]["nav-item-4"]
+headerNav[4].innerHTML = siteContent["nav"]["nav-item-5"]
+headerNav[5].innerHTML = siteContent["nav"]["nav-item-6"]
 
 /*cta*/
 document.querySelector(".cta-text h1").textContent = siteContent["cta"]["h1"]
@@ -94,7 +94,7 @@ bottomText1.textContent = siteContent["ana-içerik"]["servisler-içeriği"];
 bottomText2.textContent = siteContent["ana-içerik"]["ürünler-içeriği"];
 bottomText3.textContent = siteContent["ana-içerik"]["vizyon-içeriği"];
 
-/* iletisim */ 
+/* iletisim */
 
 document.querySelector(".contact h4").textContent = siteContent["iletisim"]["iletişim-h4"];
 
